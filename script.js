@@ -39,12 +39,13 @@ function rot13(encodedStr) {
 		
 		let val = encodedStr.charCodeAt(i);
 		if(val >= 65 && val <= 90){
-			decodedArr.push(lookup[encodedStr.charAt(i)]);
+		         encodedStr[i] = lookup[encodedStr.charAt(i)]);
 		}
 		else{
-			decodedArr.push(encodedStr.charAt(i));
+			 encodedStr[i] = encodedStr.charAt(i));
 		}
 	}
+	 decodedArr = encodedStr.split(' ');
 
   return decodedArr; //return decodedArr
 }
