@@ -42,7 +42,7 @@ function rot13(encodedStr) {
 		         encodedStr[i] = lookup[encodedStr.charAt(i)];
 		}
 		else{
-			 encodedStr[i] = encodedStr.charAt(i));
+			 encodedStr[i] = encodedStr.charAt(i);
 		}
 	}
 	 decodedArr = encodedStr.split(' ');
