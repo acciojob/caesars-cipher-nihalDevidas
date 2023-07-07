@@ -34,18 +34,19 @@ const lookup = {
 function rot13(encodedStr) {
   let decodedArr = []; // Your Result goes here
   // Only change code below this line
-
-	for(let i=0; i< encodedStr.length; i++){
+     let newStr = "";
+	for(let i=0; i <= encodedStr.length-1; i++){
 		
 		let val = encodedStr.charCodeAt(i);
 		if(val >= 65 && val <= 90){
-		         encodedStr[i] = lookup[encodedStr.charAt(i)];
+		         newStr += lookup[encodedStr.charAt(i)];
 		}
 		else{
-			 encodedStr[i] = encodedStr.charAt(i);
+			 newStr += encodedStr.charAt(i);
 		}
 	}
-	 decodedArr = encodedStr.split(' ');
+	
+	 decodedArr = newStr.split(" ");
 
   return decodedArr; //return decodedArr
 }
