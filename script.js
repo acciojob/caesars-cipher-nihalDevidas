@@ -39,7 +39,7 @@ function rot13(encodedStr) {
 		
 		let val = encodedStr.charCodeAt(i);
 		if(val >= 65 && val <= 90){
-		         encodedStr[i] = lookup[encodedStr.charAt(i)]);
+		         encodedStr[i] = lookup[encodedStr.charAt(i)];
 		}
 		else{
 			 encodedStr[i] = encodedStr.charAt(i));
